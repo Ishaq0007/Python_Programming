@@ -1,0 +1,15 @@
+students = {
+    101: {"name": "Ishaq", "grade": "A+", "Attendance": 91},
+    102: {"name": "Sayujya", "grade": "A", "Attendance": 84},
+    103: {"name": "Kaustubh", "grade": "C", "Attendance": 75}
+}
+
+#Add a new student
+students[104] = {"name": "Swayam", "grade": "B", "Attendance": 69}
+
+#Update a grade of a student
+students[101]["grade"] = "A"
+
+#Display all students records
+for students_id, details in students.items():
+    print(f"ID: {students_id}, Name: {details['name']}, Grade: {details['grade']}, Attendance: {details['Attendance']}" )
