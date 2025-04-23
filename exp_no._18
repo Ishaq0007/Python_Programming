@@ -1,0 +1,31 @@
+# Name: Ishaq Shaikh DIV: E(ECS)
+# UIN: 241S039  Roll no. 32 
+import numpy as np
+
+# 1D Array
+array_1d = np.array([1, 2, 3, 4, 5])
+print("1D Array:")
+print(array_1d)
+
+# Reshape 1D Array to 2D
+array_2d = array_1d.reshape(1, 5)
+print("\nReshaped to 2D (1x5):")
+print(array_2d)
+
+# 2D Array
+array_2d = np.array([[1, 2, 3], [4, 5, 6]])
+print("\n2D Array:")
+print(array_2d)
+
+# Slicing 2D Array (accessing specific rows and columns)
+print("\nSlicing 2D Array (First row, all columns):")
+print(array_2d[0, :])  # First row, all columns
+
+# 3D Array
+array_3d = np.array([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
+print("\n3D Array:")
+print(array_3d)
+
+# Indexing 3D Array (accessing a specific element)
+print("\nAccessing specific element in 3D Array (First element of second array):")
+print(array_3d[1, 0, 0])  # Element at [1, 0, 0]
