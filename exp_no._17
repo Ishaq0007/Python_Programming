@@ -1,0 +1,29 @@
+# Name: Ishaq Shaikh DIV: E(ECS)
+# UIN: 241S039  Roll no. 32 
+import re
+
+# Define regex patterns
+email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+phone_pattern = r'\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}'
+date_pattern = r'\b\d{2}/\d{2}/\d{4}\b'
+
+# Function to read the file and extract data
+def extract_data_from_file(file_name):
+    with open(file_name, 'r') as file:
+        content = file.read()
+
+        # Find all email addresses
+        emails = re.findall(email_pattern, content)
+        print("Emails found:", emails)
+
+        # Find all phone numbers
+        phone_numbers = re.findall(phone_pattern, content)
+        print("Phone numbers found:", phone_numbers)
+
+        # Find all dates
+        dates = re.findall(date_pattern, content)
+        print("Dates found:", dates)
+
+# File containing data (replace with your actual file path)
+file_name = 'data.txt'
+extract_data_from_file(file_name)
