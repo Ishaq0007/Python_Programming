@@ -1,0 +1,22 @@
+# Name: Ishaq Shaikh DIV: E(ECS)
+# UIN: 241S039  Roll no. 32
+def calculate_area(radius):
+    area = 3.14 * radius * radius
+    return area
+
+def calculate_circumference(radius):
+    circumference = 2 * 3.14 * radius
+    return circumference
+
+def main():
+    try:
+        radius = input("Enter the radius: ")
+        radius = int(radius)  # Convert input to an integer
+        area = calculate_area(radius)
+        circumference = calculate_circumference(radius)
+        
+        print("Area:", area)
+        print("Circumference:", circumference)
+    except ValueError:
+        print("Error: Please enter a valid number for the radius.")
+main()
